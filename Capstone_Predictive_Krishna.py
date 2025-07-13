@@ -512,16 +512,3 @@ print("Test R^2:", r2_score(y_test, y_pred_test))
 print("Selected Features for Final Analysis:")
 print(X.columns.tolist())
 
-
-# In[ ]:
-
-
-#To convert to pdf file.
-get_ipython().system('apt-get install -y texlive-xetex texlive-fonts-recommended texlive-plain-generic')
-get_ipython().system('apt-get install -y pandoc')
-
-from google.colab import drive
-drive.mount('/content/drive')
-
-get_ipython().system("jupyter nbconvert --to pdf '/content/drive/MyDrive/Deakin Bounceback Data_Version 2/Capstone_Predictive.ipynb'")
-
